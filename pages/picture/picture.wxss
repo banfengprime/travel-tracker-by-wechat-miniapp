@@ -1,0 +1,43 @@
+/* 弹窗覆盖全屏 */
+.action-sheet {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 999;
+}
+/* 弹出菜单内容 */
+.action-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+
+  padding: 0rpx 0;
+  display: flex;
+  flex-direction: column; /* 竖向排列 */
+}
+
+/* 弹窗按钮 */
+.action-btn {
+  width: 100%;
+  padding: 20rpx 0;
+  font-size: 18rpx;
+  border: none;
+  outline: none;
+  margin: 1rpx; /* 按钮间距 */
+}
+
+/* 不同功能按钮的颜色区分 */
+.mark-btn {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.delete-btn {
+  background-color: #b4736f;
+  color: #fff;
+}
+
+.cancel-btn {
+  background-color: #9e9e9e;
+  color: #fff;
+}

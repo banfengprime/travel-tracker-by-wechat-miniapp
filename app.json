@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/map/map",
+    "pages/picture/picture",
+    "pages/location/location"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText":"旅行轨迹",
+    "navigationBarTextStyle":"black",
+    "pageOrientation": "auto"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/map/map",
+        "text": "地图"
+      },
+      {
+        "pagePath": "pages/picture/picture",
+        "text": "记忆"
+      }
+    ]
+  }
+}

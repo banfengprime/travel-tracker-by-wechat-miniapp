@@ -1,0 +1,7 @@
+/* pages/location/location.wxss */
+.confirm-btn {
+  width: 90%;
+  margin: 20rpx auto;
+  background-color: #1aad19;
+  color: #fff;
+}

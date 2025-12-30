@@ -1,0 +1,16 @@
+<!--pages/location/location.wxml-->
+<!--<view>This is location!</view>-->
+<button type="primary" bindtap="returnToPicture">返回图片页</button>
+<map
+  id="map"
+  latitude="{{latitude}}"
+  longitude="{{longitude}}"
+  scale="14"
+  bindtap="onMapTap"
+  style="width: 100%; height: 80vh;"
+  markers="{{markers}}"
+/>
+
+<button class="confirm-btn" bindtap="confirmLocation">
+  确认当前位置
+</button>

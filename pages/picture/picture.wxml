@@ -1,0 +1,31 @@
+<!--picture/picture.wxml-->
+<!--<view>This is Pictures</view>-->
+<button type="primary" bindtap="chooseImage">上传照片</button>
+<!--<button type="primary" bindtap="returnToIndex">返回首页</button>-->
+<view class="img-item" wx:for="{{imageList}}" wx:key="index">
+  <image 
+    src="{{item.path}}" 
+    class="img" 
+    data-index="{{index}}" 
+    bindtap="previewImage" 
+    bindlongpress="showImageAction"
+  />
+</view>
+<!-- 弹出操作菜单 -->
+<view wx:if="{{showActionSheet}}" class="action-sheet">
+  <!-- 弹出菜单内容 -->
+  <view class="action-content">
+    <button class="action-btn mark-btn" bindtap="markLocation">标记位置</button>
+    <button class="action-btn delete-btn" bindtap="deleteImageFromSheet">删除图片</button>
+    <button class="action-btn cancel-btn" bindtap="closeActionSheet">取消</button>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
